@@ -1,0 +1,15 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 800px;
+}
+
+.grid > div {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.hover {
+    background-color: black;
+}
