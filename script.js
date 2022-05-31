@@ -22,7 +22,10 @@ let boxes = document.querySelectorAll('.box');
 
 function changeColor(item) {
     item.addEventListener('mouseover', () => {
-        item.classList.add('hover');
+        let randomRed = Math.floor(Math.random() * 255);
+        let randomGreen = Math.floor(Math.random() * 255);
+        let randomBlue = Math.floor(Math.random() * 255); 
+        item.style.backgroundColor = `rgb(${randomRed}, ${randomGreen}, ${randomBlue})`;  
     });
 }
 
